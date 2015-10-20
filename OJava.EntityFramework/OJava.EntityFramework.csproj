@@ -97,6 +97,7 @@
     <Compile Include="EntityFramework\OJavaDbContext.cs" />
     <Compile Include="EntityFramework\OJavaDbContextInitializer.cs" />
     <Compile Include="EntityFramework\Repositories\OJavaRepositoryBase.cs" />
+    <Compile Include="EntityFramework\Repositories\TaskRepository.cs" />
     <Compile Include="Initialize\EntityConfigurationBase.cs" />
     <Compile Include="Initialize\MvcFrameworkInitializer.cs" />
     <Compile Include="ModelConfigurations\AreaConfiguration.cs" />

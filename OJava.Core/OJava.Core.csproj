@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Models\Areas\Area.cs" />
     <Compile Include="Models\People\Person.cs" />
+    <Compile Include="Models\Tasks\ITaskRepository.cs" />
     <Compile Include="Models\Tasks\Task.cs" />
     <Compile Include="Models\Tasks\TaskState.cs" />
     <Compile Include="OJavaConsts.cs" />
