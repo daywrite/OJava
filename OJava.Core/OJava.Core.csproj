@@ -79,6 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Areas\Area.cs" />
+    <Compile Include="Models\People\Person.cs" />
+    <Compile Include="Models\Tasks\Task.cs" />
+    <Compile Include="Models\Tasks\TaskState.cs" />
     <Compile Include="OJavaConsts.cs" />
     <Compile Include="OJavaCoreModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,6 +90,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

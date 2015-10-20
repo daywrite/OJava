@@ -100,6 +100,8 @@
     <Compile Include="Initialize\EntityConfigurationBase.cs" />
     <Compile Include="Initialize\MvcFrameworkInitializer.cs" />
     <Compile Include="ModelConfigurations\AreaConfiguration.cs" />
+    <Compile Include="ModelConfigurations\PersonConfiguration.cs" />
+    <Compile Include="ModelConfigurations\TaskConfiguration.cs" />
     <Compile Include="OJavaDataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
