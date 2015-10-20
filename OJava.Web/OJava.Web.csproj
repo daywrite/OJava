@@ -1142,6 +1142,22 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OBear.Core\OBear.Core.csproj">
+      <Project>{1cb5d152-60c9-4903-b07f-c888178dd8a7}</Project>
+      <Name>OBear.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OBear.EntityFramework\OBear.EntityFramework.csproj">
+      <Project>{64b6debc-3b01-45c0-b876-4eec76f6e3e4}</Project>
+      <Name>OBear.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OBear.Utility\OBear.Utility.csproj">
+      <Project>{5960f9ec-da98-4fd8-b0e3-efcdc43497dd}</Project>
+      <Name>OBear.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OBear.Web\OBear.Web.csproj">
+      <Project>{37eeb2c2-642f-45e9-854c-38ef1e4c6034}</Project>
+      <Name>OBear.Web</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OJava.Application\OJava.Application.csproj">
       <Project>{edf5d964-4c0f-4f19-b674-58a38a5e5401}</Project>
       <Name>OJava.Application</Name>

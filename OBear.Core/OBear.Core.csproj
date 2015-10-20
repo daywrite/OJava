@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CB5D152-60C9-4903-B07F-C888178DD8A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OBear.Core</RootNamespace>
+    <AssemblyName>OBear.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configs\ConfigFile\Data\1-DataElement.cs" />
+    <Compile Include="Configs\ConfigFile\Data\2-ContextCollection.cs" />
+    <Compile Include="Configs\ConfigFile\Data\3-ContextElement.cs" />
+    <Compile Include="Configs\ConfigFile\Data\4-DbContextInitializerElement.cs" />
+    <Compile Include="Configs\ConfigFile\Data\5-CreateDatabaseInitializerElement.cs" />
+    <Compile Include="Configs\ConfigFile\IDataConfigReseter.cs" />
+    <Compile Include="Configs\ConfigFile\OBearFrameworkSection.cs" />
+    <Compile Include="Configs\DataConfig.cs" />
+    <Compile Include="Configs\DbContextConfig.cs" />
+    <Compile Include="Configs\OBearConfig.cs" />
+    <Compile Include="DbContextInitializerConfig.cs" />
+    <Compile Include="Initialize\FrameworkInitializerBase.cs" />
+    <Compile Include="Initialize\IDatabaseInitializer.cs" />
+    <Compile Include="Initialize\IFrameworkInitializer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reflection\CurrentDomainAssemblyFinder.cs" />
+    <Compile Include="Reflection\IAssemblyFinder.cs" />
+    <Compile Include="Reflection\IFinder.cs" />
+    <Compile Include="Security\PlatformToken.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OBear.Utility\OBear.Utility.csproj">
+      <Project>{5960f9ec-da98-4fd8-b0e3-efcdc43497dd}</Project>
+      <Name>OBear.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

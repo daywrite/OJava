@@ -78,6 +78,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Areas\Area.cs" />
     <Compile Include="OJavaConsts.cs" />
     <Compile Include="OJavaCoreModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -95,8 +95,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntityFramework\OJavaDbContext.cs" />
+    <Compile Include="EntityFramework\OJavaDbContextInitializer.cs" />
     <Compile Include="EntityFramework\Repositories\OJavaRepositoryBase.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Initialize\EntityConfigurationBase.cs" />
+    <Compile Include="Initialize\MvcFrameworkInitializer.cs" />
+    <Compile Include="ModelConfigurations\AreaConfiguration.cs" />
     <Compile Include="OJavaDataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -105,6 +108,18 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OBear.Core\OBear.Core.csproj">
+      <Project>{1cb5d152-60c9-4903-b07f-c888178dd8a7}</Project>
+      <Name>OBear.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OBear.EntityFramework\OBear.EntityFramework.csproj">
+      <Project>{64b6debc-3b01-45c0-b876-4eec76f6e3e4}</Project>
+      <Name>OBear.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OBear.Utility\OBear.Utility.csproj">
+      <Project>{5960f9ec-da98-4fd8-b0e3-efcdc43497dd}</Project>
+      <Name>OBear.Utility</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OJava.Core\OJava.Core.csproj">
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>OJava.Core</Name>
