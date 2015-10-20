@@ -86,6 +86,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DtoMappings.cs" />
     <Compile Include="OJavaApplicationModule.cs" />
     <Compile Include="OJavaAppServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
